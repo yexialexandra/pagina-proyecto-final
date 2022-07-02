@@ -10,7 +10,7 @@ header{
     height: 100px;
     background-color: darkgreen;
     padding: 0 50px;
-    color: #fff;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,93 @@ header{
     display:none;
 }
 
-/* BANNER *
+/* BANNER */
+#banner{
+    padding: 0 50px;
+    background-image: url(./images/BannerAguacate.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{
+    content: '';
+    background: 
+    position: absolute;
+    widht: 100%
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color:#fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner h3 span{
+    font-weight: 600;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #6cc091;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.45;
+}
+.boton-empezar:hover{
+    background: #6cc09070;
+}
+
+/* INFORMACION*/
+#informacion{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#informacion img{
+    border-radius: 100%;
+}
+#infomacion div{
+    padding: 30px 30px;
+}
+#informacion div h4{
+    color: #4D4D5c;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#informacion div h5{
+    color: #4D4D5c;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#informacion div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+.boton-saber-mas{
+   display: inline-block;
+   text-decoration: none;
+   color: #6cc091;
+   padding: 10px 30px;
+   border: 3px solid #6cc091;
+   border-radius: 30px;
+   margin-top: 15px;
+   transition: all 0.4s;
+}
+.boton-abr-mas:hover{
+    background: #6cc091;
+    color:#fff;
+}
 /*RESPONSIVE*/
 @media(max-width: 768px){
     /* HEADER */
@@ -60,7 +146,7 @@ header{
     }
 
     .menu{
-        position fixed;
+        position: fixed;
         width: 100%;
         height: 100vh;
         background: #4D4D;
@@ -84,6 +170,10 @@ header{
    #check:checked ~ .menu{
         right:0;
    }
+/*INFORMACION*/
+#informacion{
+    flex-direction:column;
+}
 }
 
 
