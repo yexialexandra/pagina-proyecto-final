@@ -9,11 +9,12 @@ font-family: verdana, Geneva, Tahoma, sans-serif;
 header{
     height: 100px;
     background-color: darkgreen;
-    padding: 0 50px;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .logo{
     text-transform: uppercase;
@@ -24,20 +25,17 @@ header{
     color: rgb(227, 229, 241);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 0px;
+    padding: 0 10px;
     /*transition: 0.4s; */
     font-size: 30px;
-    padding: 5px;
 }
-
 .mostrar-menu,
 .esconder-menu{
     font-size: 30px;
     cursor: pointer;
-    /*display: none; */
+    display: none;
     transition: 0.4s;
 }
-
 .mostrar-menu{
     order: 1;
 }
@@ -69,7 +67,7 @@ header{
 }
 .contenido-banner{
     position: relative;
-    color:#fff;
+    color:rgb(59, 57, 57);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -163,8 +161,7 @@ header{
         width: 100%;
         height: 100vh;
         background: rgba(127, 133, 127, 0.867);
-        left: 0;
-        /* right: 100%; */
+        right: -100%;
         top: 0;
         text-align: center;
         padding: 100px 0px;
@@ -177,11 +174,11 @@ header{
     }
     .esconder-menu{
         position: absolute;
-        top: 4opx;
+        top: 40px;
         right: 40px;
    }
    #check:checked ~ .menu{
-        right:0;
+    right: 0;
    }
 /*INFORMACION*/
 #informacion{
